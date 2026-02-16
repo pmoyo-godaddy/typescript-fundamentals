@@ -25,6 +25,7 @@ let inferredString = 'TypeScript'; // Type is inferred as string
 let inferredNumber = 2024; // Type is inferred as number
 
 // Arrays
+// This course has 7 modules (1-7), listed in the topics array
 let topics: string[] = [
   'Course Introduction',
   'Getting Started with TypeScript',
@@ -36,6 +37,7 @@ let topics: string[] = [
 ];
 
 console.log(`\nCourse Topics:`);
+// Display each topic with its module number (1-7)
 topics.forEach((topic, index) => {
   console.log(`  Module ${index + 1}: ${topic}`);
 });
