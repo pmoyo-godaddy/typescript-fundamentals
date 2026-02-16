@@ -26,6 +26,7 @@ let inferredNumber = 2024; // Type is inferred as number
 
 // Arrays
 let topics: string[] = [
+  'Course Introduction',
   'Getting Started with TypeScript',
   'Using Variables, Types, and Enums',
   'Creating and Using Functions',
@@ -36,7 +37,7 @@ let topics: string[] = [
 
 console.log(`\nCourse Topics:`);
 topics.forEach((topic, index) => {
-  console.log(`  Module ${index + 2}: ${topic}`);
+  console.log(`  Module ${index + 1}: ${topic}`);
 });
 
 // Simple Function with Type Annotations
