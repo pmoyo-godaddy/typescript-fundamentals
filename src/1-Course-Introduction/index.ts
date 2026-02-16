@@ -1,9 +1,9 @@
 /**
  * Welcome to TypeScript Fundamentals!
- * 
+ *
  * This course will teach you the fundamentals of TypeScript,
  * a strongly typed programming language that builds on JavaScript.
- * 
+ *
  * TypeScript adds optional static types to JavaScript, which can help
  * you catch errors early and make your code more maintainable.
  */
@@ -11,7 +11,7 @@
 // Basic Types in TypeScript
 // TypeScript provides several basic types including string, number, and boolean
 
-let courseName: string = "TypeScript Fundamentals";
+let courseName: string = 'TypeScript Fundamentals';
 let moduleCount: number = 7;
 let isCompleted: boolean = false;
 
@@ -21,17 +21,17 @@ console.log(`Course completed: ${isCompleted}`);
 
 // Type Inference
 // TypeScript can automatically infer types based on the value assigned
-let inferredString = "TypeScript"; // Type is inferred as string
+let inferredString = 'TypeScript'; // Type is inferred as string
 let inferredNumber = 2024; // Type is inferred as number
 
 // Arrays
 let topics: string[] = [
-  "Getting Started with TypeScript",
-  "Using Variables, Types, and Enums",
-  "Creating and Using Functions",
-  "Creating and Using Interfaces",
-  "Creating and Using Classes",
-  "Creating and Using Generics"
+  'Getting Started with TypeScript',
+  'Using Variables, Types, and Enums',
+  'Creating and Using Functions',
+  'Creating and Using Interfaces',
+  'Creating and Using Classes',
+  'Creating and Using Generics',
 ];
 
 console.log(`\nCourse Topics:`);
@@ -44,7 +44,7 @@ function greetStudent(name: string): string {
   return `Hello, ${name}! Ready to learn TypeScript?`;
 }
 
-const greeting = greetStudent("Learner");
+const greeting = greetStudent('Learner');
 console.log(`\n${greeting}`);
 
 // Object with Type Annotation
@@ -58,11 +58,11 @@ interface Course {
 const typescriptCourse: Course = {
   name: courseName,
   modules: moduleCount,
-  level: "Fundamentals",
-  topics: topics
+  level: 'Fundamentals',
+  topics: topics,
 };
 
-console.log("\nCourse Information:");
+console.log('\nCourse Information:');
 console.log(`Name: ${typescriptCourse.name}`);
 console.log(`Level: ${typescriptCourse.level}`);
 console.log(`Total Modules: ${typescriptCourse.modules}`);
@@ -72,4 +72,6 @@ console.log(`Total Modules: ${typescriptCourse.modules}`);
 // Uncomment the following line to see TypeScript's type checking in action:
 // let errorExample: number = "This will cause an error"; // Error: Type 'string' is not assignable to type 'number'
 
-console.log("\n✅ Module 1 Complete! Proceed to the next modules to learn more.");
+console.log(
+  '\n✅ Module 1 Complete! Proceed to the next modules to learn more.',
+);
